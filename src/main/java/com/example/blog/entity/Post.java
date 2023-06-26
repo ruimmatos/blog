@@ -1,14 +1,14 @@
 package com.example.blog.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Data   //adiciona getter, setter, toString e hashcode
+//@Data adiciona getter, setter, toString e hashcode
+@Getter
+@Setter //para usar o ModelMapper nao podemos ter o @Data se nao fica num loop infinito
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
