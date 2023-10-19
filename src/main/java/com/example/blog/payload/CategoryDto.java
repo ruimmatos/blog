@@ -1,2 +1,10 @@
-package com.example.blog.payload;public class CategoryDto {
+package com.example.blog.payload;
+
+import lombok.Data;
+
+@Data
+public class CategoryDto {
+    private Long id;
+    private String name;
+    private String description;
 }
